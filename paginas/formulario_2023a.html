@@ -3,86 +3,94 @@
 <html lang="es">
 
 <!-- Este es el encabezado de la página -->
+
 <head>
-  <meta charset="UTF-8">
-  <title>Formularios web</title>
+	<meta charset="UTF-8">
+	<title>Formularios web</title>
 </head>
 
 <!-- Este es el cuerpo de la página -->
-<body>
-<!-- Aqui van los contenidos que se mostrarán en la página web -->
-<form action="grabar_datos.php" method="post" id="formulario1">
-   <fieldset>
-      <legend>Texto personalizado de tu formulario:</legend>
 
-  <!-- Cajas de Texto -->
-	   <label for="txt_nombre">Nombre:</label><br>
-       <input type="text" id="txt_nombre" name="txt_nombre" 
-	          value="Escribe tu nombre">
-	   <br><br>
-	   
-	    <!-- Cajas de Selección o "ComboBox" -->
-	   Carrera que quieres estudiar: <br>
-	   <select id="cb_carrera">
-	      <option value="0"> Selecciona una carrera ... </option>
-	      <option value="ADM"> Administración </option>
-		  <option value="EDU"> Educación </option>
-		  <option value="MKT"> Mercadotecnia </option>
-		  <option value="LTIN"> Tecnologías de la Información </option>
-		  <option value="ENF"> Enfermeria </option>
-		  <option value="DER"> Derecho </option>
-		  <option value="IMC"> Ingenieria en Mecatronica </option>
-		  <option value="IEC"> Ingenieria en Electronica y Computacion </option>
-		  <option value="AGN"> Agronegocios </option>
-		  <option value="TUR"> Turismo </option>
-		  <option value="CONT"> Contaduria </option>
-		  <option value="PSI"> Psicologia </option>
-	   </select>
-	   
-	   <br><br>
-	   
-	   <!-- Botones tipo RADIO // radiobuttons -->
-	   Selecciona tu género: <br>
-	   <input type="radio" name="sexo" value="M"> Mujer
-	   <br>
-       <input type="radio" name="sexo" value="H"> Hombre
-	   <br>
-       <input type="radio" name="sexo" value="N"> Desconoce
-	   
-	   <br><br>
-	   
-	    <!-- Botones tipo RADIO // radiobuttons -->
-	   Selecciona el turno a estudiar: <br>
-	   <input type="radio" name="turno" value="Mat"> Maturino
-	   <br>
-       <input type="radio" name="turno" value="Ves"> Vespertino
-	   <br>
-       <input type="radio" name="turno" value="Noc"> Nocturno
-	   <input type="radio" name="sexo" value="N"> Desconoce
-	   
-	   <br><br>
-	   
-	   <!-- Botones tipo CHECK // checkbuttons -->
-	   Selecciona los talleres que llevarás en primero: <br>
-	   <input type="checkbox" name="taller" value="ajedrez">Ajedrez<br>
-       <input type="checkbox" name="taller" value="pintura">Pintura<br> 
-	   <input type="checkbox" name="taller" value="musica">Música<br>
-	   <input type="checkbox" name="taller" value="futbol">Fut Bol<br>
-	   <input type="checkbox" name="taller" value="basquet">Basquet Bol<br>
-	   <input type="checkbox" name="taller" value="baile">Baile<br>
-	
-	   <br>
-	   
-	   <textarea name="Texto Enorme" rows="5" cols="30">
+<body>
+	<!-- Aqui van los contenidos que se mostrarán en la página web -->
+	<form action="grabar_datos.php" method="post" id="formulario1">
+		<fieldset>
+			<legend>Texto personalizado de tu formulario:</legend>
+
+			<!-- Cajas de Texto -->
+			<label for="txt_nombre">Nombre:</label><br>
+			<input type="text" id="txt_nombre" name="txt_nombre" value="Escribe tu nombre">
+			<br><br>
+
+			<!-- Cajas de Selección o "ComboBox" -->
+			Carrera que quieres estudiar: <br>
+			<select id="cb_carrera">
+				<option value="0"> Selecciona una carrera ... </option>
+				<option value="ADM"> Administración </option>
+				<option value="EDU"> Educación </option>
+				<option value="MKT"> Mercadotecnia </option>
+				<option value="LTIN"> Tecnologías de la Información </option>
+				<option value="ENF"> Enfermeria </option>
+				<option value="DER"> Derecho </option>
+				<option value="IMC"> Ingenieria en Mecatronica </option>
+				<option value="IEC"> Ingenieria en Electronica y Computacion </option>
+				<option value="AGN"> Agronegocios </option>
+				<option value="TUR"> Turismo </option>
+				<option value="CONT"> Contaduria </option>
+				<option value="PSI"> Psicologia </option>
+			</select>
+
+			<br><br>
+
+			<!-- Botones tipo RADIO // radiobuttons -->
+			Selecciona tu género: <br>
+			<input type="radio" id="SexMuj" name="sexo" value="M"> Mujer
+			<br>
+			<input type="radio" id="SexHom" name="sexo" value="H"> Hombre
+			<br>
+			<input type="radio" id="Desc" name="sexo" value="N"> Desconoce
+
+			<br><br>
+
+			<!-- Botones tipo RADIO // radiobuttons -->
+			Selecciona el turno a estudiar: <br>
+			<input type="radio" id="radioM" name="turno" value="Mat"> Maturino
+			<br>
+			<input type="radio" id="radioV" name="turno" value="Ves"> Vespertino
+			<br>
+			<input type="radio" id="radioN" name="turno" value="Noc"> Nocturno
+
+			<br><br>
+
+			<!-- Botones tipo CHECK // checkbuttons -->
+			Selecciona los talleres que llevarás en primero: <br>
+			<input type="checkbox" name="taller" id="tall1" value="ajedrez">Ajedrez<br>
+			<input type="checkbox" name="taller" id="tall2" value="pintura">Pintura<br>
+			<input type="checkbox" name="taller" id="tall3" value="musica">Música<br>
+			<input type="checkbox" name="taller" id="tall4" value="futbol">Fut Bol<br>
+			<input type="checkbox" name="taller" id="tall5" value="basquet">Basquet Bol<br>
+			<input type="checkbox" name="taller" id="tall6" value="baile">Baile<br>
+			<input type="checkbox" name="taller" id="tall7" value="juegosM">Juegos de Mesa<br>
+			<input type="checkbox" name="taller" id="tall8" value="poesia">Poesia <br>
+			<input type="checkbox" name="taller" id="tall9" value="piano" style="font-size: 100px; color: red;">piano <br>
+
+			<br>
+
+			<textarea name="Texto Enorme" rows="10" cols="80">
            Este texto aparecerá por defecto en la Cajota de texto.
        </textarea>
-	   
-	   <br><br>
-	   
-	   <input type="submit" value=" ..:: Grabar datos ::.. ">
-	   
-   </fieldset>
-</form>
+
+			<br><br>
+			
+			<input type="hidden" id="custId" name="custId" value="jesus">
+
+			<br>
+
+			<input type="submit" value=" ..:: Grabar datos ::.. ">
+
+		</fieldset>
+	</form>
 
 </body>
+
 </html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Videojuegos</title>
+</head>
+
+<body>
+  <form action="paraphp.php" method="post">
+    <fieldset>
+      <legend>Formulario para captura de videjuego</legend>
+      <label for="txt_titulo">Titulo de Videjouego:</label> <br>
+      <input type="text" name="txt_titulo" id="txt_titulo"
+        value="">
+      <br> 
+      Consola en la que se puede jugar: <br>
+
+      <select id="cb_consola">
+        <option value="0"> Seleccione una consola de Videojuegos...</option>
+        <option value="xbox"> Xbox</option>
+        <option value="play"> PlayStation</option>
+        <option value="nin"> Nintendo Switch</option>
+        <option value="pc"> Computadora Gamer</option>
+      </select>
+      <br>
+      
+
+      <label for="txt_titulo">Precio del videojuego: </label> <br><input type="text" name="txt_precio" id="txt_precio"
+        value="">
+      <br>
+      
+      Selecciona como te enteraste de este videojuego: <br>
+
+      <input type="radio" name="comercial" value="Internet"> Por Internet <br>
+      <input type="radio" name="comercial" value=""> Por la TV <br>
+      <input type="radio" name="comercial" value="1_amigo"> Por 1 amigo <br>
+
+      <input type="submit" value="..:: Grabar datos del Videojuego ::..">
+    </fieldset>
+  </form>
+  <h2>Jesus Emmanuel Santos Chavez</h2>
+</body>
+
+</html>

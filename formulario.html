@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Formularios Web</title>
+</head>
+
+<body>
+  <!-- Código para el FORMULARIO WEB -->
+  <form action="grabardatos.php" method="post" id="formulario1">
+    <fieldset>
+      <legend>Datos solicitados:</legend>
+      Nombre:<br>
+      <!-- Código para Caja de Texto (TextBox) -->
+      <input type="text" id="txt_nombre" name="txt_nombre"><br />
+      Paterno:<br />
+      <!-- Código para Caja de Texto (TextBox) -->
+      <input type="text" id="txt_apellido" name="txt_paterno">
+      <br />
+      <br />CARRERAS<br />
+      <!-- Código para botones tipo radio (radio button) -->
+      <input type="radio" id="carrCont" name="rb_carrera" value="CONT"> Conta<br />
+      <input type="radio" id="carrTur" name="rb_carrera" value="TUR"> Turismo<br />
+      <input type="radio" id="carrMec" name="rb_carrera" value="MEC"> Mecatronica
+      <br /><br />
+      <!-- Código para Caja de Selección o ComboBox -->
+      TURNO:
+      <select id="turnos" name="cars">
+        <!-- Cada opción de la caja de selección lleva un option -->
+        <option value="0">Selecciona un turno</option>
+        <option value="M">Matutino</option>
+        <option value="V">Vespertino</option>
+        <option value="N">Nocturno</option>
+        <option value="WEB">En línea</option>
+      </select> <br><br>
+      TRASNPORTE A LA ESCUELA
+      <br />
+      <!-- Código para Check Box -->
+      <input type="checkbox" id="trans1"  name="transporte1" value="Bici">Bicicleta<br />
+      <input type="checkbox" id="trans2" name="transporte2" value="Auto">Automovil
+      <br /><br />
+      COMENTARIO: <br />
+      <!-- Código para una caja de texto multilínea -->
+      <textarea name="txt_comentario" id="textTarea" rows="3" cols="50">
+Escribe aqui tu comentario
+   </textarea>
+      <br /><br />
+      <!-- Código para botón de comando -->
+      <input type="submit" id="boton" value=" ..:: Grabar datos ::.. ">
+    </fieldset>
+  </form>
+</body>
+
+</html>

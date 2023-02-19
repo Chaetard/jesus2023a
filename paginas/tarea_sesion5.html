@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practica de la Sesion 5</title>
+</head>
+
+<body>
+  <form action="grabar_informacionSESION5.php" method="post" id="form_vendiendo_motos">
+    <fieldset>
+      <legend> Formulario de compra de una Motocicleta </legend>
+      <label for="nombreUno"> Nombre del Propietario: </label>
+      <input type="text" name="propietario" id="nombreUno">
+      <br>
+      <br>
+      Tipo de Motocicleta:
+      <select id="motoTipo">
+        <option value="none"> -- Seleccione un tipo -- </option>
+        <option value="MPista"> Moto de Pista </option>
+        <option value="MRuta"> Moto de Ruta </option>
+        <option value="Cuatri"> Cuatrimoto </option>
+        <option value="MCarreras"> Moto De Carreras </option>
+        <option value="MX"> Moto X </option>
+      </select>
+      <br>
+      <br>
+      Seleccione una Marca: <br>
+
+      <input type="radio" name="Marca" value="HD"> Honda
+      <br>
+      <input type="radio" name="Marca" value="YH"> Yamaha
+      <br>
+      <input type="radio" name="Marca" value="CA"> Can Am
+      <br>
+      <input type="radio" name="Marca" value="IK"> Italika
+      <br>
+      <input type="radio" name="Marca" value="BM"> BMW
+      <br>
+      <input type="radio" name="Marca" value="HDAV"> Harley Davison
+      <br>
+      <input type="radio" name="Marca" value="PT"> Patito
+
+      <br>
+      <br>
+
+      Fecha de la compra <br>
+      Dia:
+      <select id="DiaForm">
+        <option value="none"> -- Seleccione el dia -- </option>
+        <option value="1"> 1 </option>
+        <option value="2"> 2 </option>
+        <option value="3"> 3 </option>
+        <option value="4"> 4 </option>
+        <option value="5"> 5 </option>
+        <option value="6"> 6 </option>
+        <option value="7"> 7 </option>
+        <option value="8"> 8 </option>
+        <option value="9"> 9 </option>
+        <option value="10"> 10 </option>
+        <option value="11"> 11 </option>
+        <option value="12"> 12 </option>
+        <option value="13"> 13 </option>
+        <option value="14"> 14 </option>
+        <option value="15"> 15 </option>
+        <option value="16"> 16 </option>
+        <option value="17"> 17 </option>
+        <option value="18"> 18 </option>
+        <option value="19"> 19 </option>
+        <option value="20"> 20 </option>
+        <option value="21"> 21 </option>
+        <option value="21"> 22 </option>
+        <option value="23"> 23 </option>
+        <option value="24"> 24 </option>
+        <option value="25"> 25 </option>
+        <option value="26"> 26 </option>
+        <option value="27"> 27 </option>
+        <option value="28"> 28 </option>
+        <option value="29"> 29 </option>
+        <option value="30"> 30 </option>
+        <option value="31"> 31 </option>
+      </select>
+
+      <br>
+      <br>
+      Mes:
+      <select id="MesForm">
+        <option value="0"> -- Seleccione el mes -- </option>
+        <option value="Ene"> Enero </option>
+        <option value="Feb"> Febrero </option>
+        <option value="Mar"> Marzo </option>
+        <option value="Abr"> Abril </option>
+        <option value="May"> Mayo </option>
+        <option value="Jun"> Junio </option>
+        <option value="Jul"> Julio </option>
+        <option value="Ago"> Agosto </option>
+        <option value="Sep"> Septiembre </option>
+        <option value="Oct"> Octubre </option>
+        <option value="Nove"> Noviembre </option>
+        <option value="Dic"> Diciembre </option>
+      </select>
+      <br>
+      <br>
+      Año:
+      <select id="Año">
+        <option value="0"> -- Seleccione el año -- </option>
+        <option value="2018"> 2018 </option>
+        <option value="2019"> 2019 </option>
+        <option value="2020"> 2020 </option>
+        <option value="2021"> 2021 </option>
+        <option value="2022"> 2022 </option>
+        <option value="2023"> 2023 </option>
+      </select>
+      <br>
+      <br>
+
+      Elige los Accesorios que quieras para la motocicleta: <br>
+      <input type="checkbox" name="Accesorios" value="Casco"> Casco
+      <br>
+      <input type="checkbox" name="Accesorios" value="Guantes"> Guantes
+      <br>
+      <input type="checkbox" name="Accesorios" value="Winch"> Winch
+      <br>
+      <input type="checkbox" name="Accesorios" value="Barra_de_leds"> Barra de leds
+      <br>
+      <input type="checkbox" name="Accesorios" value="Chamarra"> Chamarra
+      <br>
+      <input type="checkbox" name="Accesorios" value="Googles"> Googles
+      <br>
+      <input type="checkbox" name="Accesorios" value="Botas"> Botas
+      <br>
+      <input type="checkbox" name="Accesorios" value="Rines_deportivos"> Rines deportivos
+      <br>
+      <input type="checkbox" name="Accesorios" value="Pechera"> Pechera
+      <br>
+      <input type="checkbox" name="Accesorios" value="Armadura"> Armadura
+      <br>
+      <br>
+
+      <input type="hidden" id="custId" name="custId" value="Jesus_Emmanuel_Santos_Chavez">
+
+
+      Observaciones o notas de la venta <br>
+      <textarea name="Texto" rows="7" cols="40"> </textarea>
+
+      <br>
+      <br>
+
+      <input type="submit" value=" ..:: Grabar datos ::.. ">
+	   <input type="reset" value=" ..:: Borrar estos datos ::.. ">
+    </fieldset>
+  </form>
+</body>
+
+</html>

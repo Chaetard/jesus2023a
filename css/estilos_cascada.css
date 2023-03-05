@@ -38,7 +38,7 @@ a{
 }
 #division_listado{
     list-style-image: url("../imagenes/wp.gif");
-    background-color: green;
+    background-color: rgb(1, 187, 1);
 }
 a:hover{
     text-decoration: underline;

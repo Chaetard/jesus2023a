@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* Estilos CSS programados por Abraham Vega */
+
+/* Definimos color de fondo de la página web a NEGRO */
+body { 
+     /* Color de fondo */
+     background-color:#e20780;
+	 /* Color de los textos */
+	 color:#FFFF33; 
+	 /* Colores RGB = RED - GREEN - BLUE en valor Hexadecimal */
+	 font-size: 15px;
+	 font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Asi se define CSS para la ETIQUETA párrafo en GENERAL */
+p { 
+     color:#000000;
+  }
+	
+/* Así se define CSS para un ID en particular */
+/* Para un ID se escribe el símbolo del # y el nombre del ID */
+
+	
+
+#parrafo2 {
+	color:#0000FF;
+	font-size: 22px;
+	} 
+
+#parrafo3 {
+	color:#FFFFCC;
+	text-align:right; 
+	font-size:40px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	}
+	
+/* Las CLASES de CSS se definen con un PUNTO al inicio de su nombre */
+/* Las CLASES se usan para aplicar a VARIOS objetos al mismo tiempo */
+.MiClase1 {
+	color:#02F50F;
+	text-align:center; 
+	font-size:30px;
+	
+	}
+
+#identificador{
+	color: #000000;
+	background-color: sienna;
+	text-align: center;
+	
+	font-size: 25px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-style: oblique;
+}
+
+.ClaseSelectFrutas{
+	font-size: 35px;
+	color: black;
+	background-color: #e20780;
+	border: none;
+}

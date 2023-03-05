@@ -1,0 +1,46 @@
+.imagen_texto{
+    max-width: 40%;
+    width: auto;
+    height: auto;
+    float: left;
+    
+}
+#texto{
+    
+    text-align:left;
+}
+
+#tabla{
+    background-color: #CCCCCC;
+    width: 90%;
+    text-align: left;
+    border: blue 3px solid;
+}
+#division_tabla{
+    background-color: #CCCCCC;
+    color: #000000;
+    clear: both;
+}
+tr{
+    text-align: center;
+}
+.par{
+    background-color: #ACE4F7;
+    text-align: left;
+}
+.impar{
+    background-color: white;
+    text-align: left;
+}
+
+a{
+    text-decoration: none;
+}
+#division_listado{
+    list-style-image: url("../imagenes/wp.gif");
+    background-color: green;
+}
+a:hover{
+    text-decoration: underline;
+    color: blue;
+}

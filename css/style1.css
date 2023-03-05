@@ -1,0 +1,36 @@
+h1:hover{
+    color: red;
+    font-size: 50px ;
+}
+body{
+    font-size: 15px;
+}
+h1{
+    color: blue;
+}
+p{
+    color: gray;
+    text-align: justify;
+}
+#lista{
+   list-style: none;
+   color: red;
+}
+#hr1{
+   width: 50%;
+   color: red;
+   height: 10px;
+   background-color: red;
+
+
+}
+#texto{
+    color: red !important;
+}
+#selec{
+    color: blue;
+}
+#boton{
+    background-color: black;
+    color: white;
+}

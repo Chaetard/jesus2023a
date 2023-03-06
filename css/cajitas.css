@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS para modelo de cajas */
+
+/* Estilos para el encabezado del tipo h2 */
+h2 {
+  background-color: #f04a4d;
+}
+
+/* Estilos para la caja1 mediante su atributo id */
+#caja1 {
+  background-color: #5d53e7;
+  padding: 20px; /* Espacio alrededor del CONTENIDO, los 4 lados */
+  margin: 10px; /* Espacio después del borde de la caja */
+}
+
+/* Estilos para la caja2 mediante su atributo id */
+#caja2 {
+  font-size: 20px;
+  background-color: yellow;
+  padding-top: 20px; /* Espacio después del contenido, SOLO ARRIBA */
+  border-color: black; /* Linea alrededor de la caja (Los 4 lados) */
+  border-style: dashed;
+  border-width: 3px;
+}
+
+/* Estilos para la lista no ordenada */
+ul {
+  background-color: gray;
+  border-bottom-color: red; /* Linea SOLO EN LA PARTE DE ABAJO de la caja */
+  border-bottom-width: 5px;
+  border-bottom-style: double;
+}

@@ -1,0 +1,40 @@
+*{
+    margin: 0; 
+    padding: o;
+    
+}
+
+#Lista1{
+    background-color: yellow;
+    padding: 10px;
+    padding-left: 30px;
+    border-left-color: blue;
+    border-left-style: solid;
+    border-left-width: 10px;
+
+    border-right-color:red;
+    border-right-style: solid;
+    border-right-width: 10px;
+
+    margin-bottom: 10px;
+}
+
+#Lista2{
+    background-color: orange;
+    border-bottom-color: red;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 50px;
+}
+
+#i{
+background-color: red;
+padding: 10px;
+margin: 30px;
+}
+#i:hover{
+    background-color: blue;
+    margin: 100px 90px 70px 60px;
+}

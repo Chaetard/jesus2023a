@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejemplo de HTML5 y CSS</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #666;
+        }
+
+        a {
+            color: #00bfff;
+            text-decoration: none;
+        }
+
+        /* Estilos intermedios */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 40px 0;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .col {
+            flex-basis: calc(33.33% - 10px);
+            margin-bottom: 20px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Estilos avanzados */
+        @media (max-width: 768px) {
+            .col {
+                flex-basis: 100%;
+            }
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border: none;
+            background-color: #00bfff;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0099cc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Ejemplo de HTML5 y CSS</h1>
+        <p>Este es un ejemplo que muestra algunas de las funciones básicas, intermedias y avanzadas de HTML5 y CSS.</p>
+        <div class="row">
+            <div class="col">
+                <h2>Funciones básicas</h2>
+                <p>Las funciones básicas incluyen el uso de etiquetas HTML como &lt;p&gt; para párrafos, &lt;a&gt; para
+                    enlaces y &lt;img&gt; para imágenes.</p>
+                <a href="#">Un enlace de ejemplo</a>
+                <img src="https://via.placeholder.com/150" alt="Una imagen de ejemplo">
+            </div>
+            <div class="col">
+                <h2>Funciones intermedias</h2>
+                <p>Las funciones intermedias incluyen el uso de estilos CSS para dar formato a los elementos HTML, así
+                    como el diseño de una rejilla de diseño flexible utilizando display: flex y flex-wrap.</p>
+                <button class="btn">Un botón de ejemplo</button>
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+
+</body>
+
+</html>

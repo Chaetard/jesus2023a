@@ -1,0 +1,125 @@
+@font-face {
+  font-family: batman;
+  src: url("../fonts/bat1.ttf");
+}
+
+@font-face {
+  font-family: retro;
+  src: url("../fonts/Retro.ttf");
+}
+
+@font-face {
+    font-family: batmand;
+    src: url(../fonts/bat2.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+body {
+  background-color: black;
+}
+
+#contenedor {
+  width: 960px;
+  height: 500px;
+  background-color: gray;
+  margin: auto;
+}
+
+#div1 {
+  width: 300px;
+  height: 200px;
+  background-color: #2f39e8;
+  top: 20px;
+  left: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+  float: left;
+  font-family: batman;
+  font-size: 30px;
+  /* Para los BORDES */
+  border-style: solid;
+  border-width: 5px;
+  border-color: red;
+
+  /* Para las ESQUINAS REDONDEADAS */
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  /* Para el color de fondo DESVANECIDO */
+  background-image: linear-gradient(orange, yellow, red);
+  /* Para la SOMBRA */
+  box-shadow: 10px 10px #646464;
+  transition: 10s;
+}
+#div1:hover {
+  background-color: blue;
+}
+
+#div2 {
+  width: 300px;
+  height: 200px;
+  background-color: #f04cd1;
+  top: 20px;
+  left: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  float: right;
+  font-family: retro;
+  font-size: 40px;
+  margin-top: 10px;
+
+  /* Para los BORDES */
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+
+  /* Para las ESQUINAS REDONDEADAS */
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  /* Para el color de fondo DESVANECIDO */
+  background-image: linear-gradient(blue, cyan, rgb(0, 132, 255));
+  /* Para la SOMBRA */
+  box-shadow: -10px -10px blueviolet;
+}
+
+#div3 {
+  width: 600px;
+  height: 200px;
+  background-color: #f04cd1;
+  top: 20px;
+  left: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  float: right;
+  font-family: batmand;
+  font-size: 40px;
+  margin-top: 20px;
+
+  /* Para los BORDES */
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+
+  /* Para las ESQUINAS REDONDEADAS */
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  /* Para el color de fondo DESVANECIDO */
+  background-image: linear-gradient(blue, cyan, rgb(0, 132, 255));
+  /* Para la SOMBRA */
+  box-shadow: 10px 10px blueviolet;
+
+  /* Para las imagenes de fondo */
+  background-image:url("../imagenes/imagenmc.jpg"), 
+  url("../imagenes/img1.png");
+background-position: right top, left top;
+background-size: 280px 200px, 200px 200px;
+background-repeat: no-repeat, no-repeat;
+}

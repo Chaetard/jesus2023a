@@ -1,0 +1,78 @@
+body {
+    background-color: black;
+  }
+  #contenedor {
+    width: 960px;
+    height: 1200px;
+    background-color: gray;
+    margin: auto;
+  }
+  h2 {
+    text-align: center;
+  }
+  #div1 {
+    width: 920px;
+    height: 200px;
+    background-color: #2f39e8;
+   
+    margin-left: 20px;
+    
+  }
+  #div2 {
+    width: 920px;
+    height: 50px;
+    background-color: #f04cd1;
+  margin-top: 5px;
+    margin-left: 20px;
+  
+  }
+  #div3 {
+    width: 220px;
+    height: 500px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 35%,
+      rgba(5, 183, 28, 1) 88%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    
+    margin-top: 5px;
+    margin-left: 20px;
+    float: left;
+    
+  }
+  #div4{
+    width: 675px;
+    height: 30px;
+    background-color: #f04cd1;
+    margin-top: 5px;
+    margin-left: 25px;
+    position: static;
+    float: left;
+  }
+  #div5{
+    width: 675px;
+    height: 466px;
+    background-color: #f04cd1;
+    margin-top: 5px;
+    margin-left: 25px;
+    float: left;
+  }
+  #div6{
+    width: 920px;
+    height: 100px;
+    background-color: #f04cd1;
+    margin-top: 5px;
+    margin-left: 20px;
+    float: left;
+  }
+ 
+  /*
+  absolute: de la ventana
+  fixed: ventana estatico
+  relative: posision inicial
+  static: 
+  */
+  

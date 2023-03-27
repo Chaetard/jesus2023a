@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=ISO-8859-1"
+     http-equiv="content-type" />
+<title>Posicionamiento absoluto</title>
+<style type="text/css"> 
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+#container {
+	right: 0;
+	left: 0;
+	background: #FFF;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: 0 auto;
+	width: 980px;
+}
+#content {
+	padding:20px;
+}
+#header {
+	height: 70px;
+	background: #ADB96E;
+	line-height: 70px;
+	text-align: center;
+	color: #333;
+}
+#header h1 {
+	margin: 0;
+}
+#columna_izquierda {
+	position: absolute;
+	top:70px;
+	left: 0;
+	bottom: 0;
+	width: 180px;
+	background-color: #EADCAE;
+	padding-bottom: 10px;
+}
+#columna_derecha {
+	position: absolute;
+	top:70px;
+	left: 180px;
+	bottom: 0;
+	/*overflow:visible;*/
+	height:1000px;
+}
+a img {
+	border: none;
+}
+a:link {
+	color: #42413C;
+	text-decoration: underline;
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus {
+	text-decoration: none;
+}
+ul.nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border-top: 1px solid #666;
+	margin-bottom: 15px;
+}
+ul.nav li {
+	border-bottom: 1px solid #666;
+}
+ul.nav a, ul.nav a:visited {
+	padding: 5px 5px 5px 15px;
+	display: block;
+	width: 160px;
+	text-decoration: none;
+	background: #C6D580;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus {
+	background: #ADB96E;
+	color: #FFF;
+}
+</style>
+</head>
+<body>
+<div id="container">
+  <div id="header">
+    <h1>Posicionamiento absoluto</h1>
+  </div>
+  <div id="columna_izquierda">
+    <ul class="nav">
+      <li><a href="#inicio">Vínculo uno</a></li>
+      <li><a href="#ap2">Vínculo dos</a></li>
+      <li><a href="#ap3">Vínculo tres</a></li>
+      <li><a href="#ap4">Vínculo cuatro</a></li>
+    </ul>
+  </div>
+  <div id="columna_derecha">
+    <div id="content">
+      <h1 id="inicio">P&aacute;gina con posicionamiento absoluto</h1>
+      <p> Esta p&aacute;gina est&aacute; maquetada principalmente con posicionamiento absoluto.</p>
+      <p>Todo el contenido est&aacute; en un div contenedor, absoluto, colocado con top: 0 y bottom: 0; ancho fijo y margen lateral auto.</p>
+      <p>La cabecera es una capa normal, sin posicionamiento, pero con un alto fijo de 70px.</p>
+      <p>La columna de la izquierda tiene posicionamiento absoluto, con los valores 0 a la izquierda, 70px arriba (el alto de la cabecera) y 0 abajo. Ela ncho es fijo, de 180px;</p>
+      <p>La columna derecha con el texto tambi&eacute;n es absoluta, con los valores 70px arriba (el alto de la cabecera), 180px a la izquierda (el ancho de la otra columna) y 0 abajo. Para que muestre la barra de desplazamiento, le hemos dado un desbordamiento autom&aacute;tico (<em>overflow: auto</em>).</p>
+      <p>Pulsa los enlaces del men&uacute;.</p>
+      <h2 id="ap2">Texto de ejemplo 2</h2>
+      <p>Praesent ut ipsum. Nullam vitae nunc. Nam sit amet libero id mauris  consectetur pulvinar. Suspendisse vulputate lorem quis lectus. Quisque  commodo purus et nibh. Nunc quis mi quis risus hendrerit ultricies. Cum  sociis natoque penatibus et magnis dis parturient montes, nascetur  ridiculus mus. Aliquam ac dui. Mauris vulputate fermentum tellus. Morbi  rhoncus lorem id nibh. </p>
+      <p>Etiam cursus nulla ac purus. Pellentesque massa elit, dignissim et,  volutpat eu, sagittis tristique, sem. Quisque nec leo. Etiam fringilla  pellentesque turpis. Vestibulum at est. Sed sapien nunc, faucibus ac,  suscipit sit amet, lacinia porttitor, mauris. Curabitur congue justo  sed nunc. Pellentesque habitant morbi tristique senectus et netus et  malesuada fames ac turpis egestas. Integer tristique diam vitae ligula.  Nulla tincidunt, metus sit amet congue porttitor, purus pede commodo  odio, vel varius mauris nulla id augue. Mauris pellentesque volutpat  lacus. Maecenas erat. </p>
+      <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices  posuere cubilia Curae; Vestibulum volutpat, lacus non mattis vulputate,  lorem nunc varius odio, in venenatis ante augue quis nisl. Praesent ut  mi interdum lorem consequat vulputate. Vivamus ac urna non elit  pellentesque sollicitudin. Nunc pharetra nibh in quam. Proin eu magna  ut ligula volutpat mollis. Quisque mollis, nulla a porttitor commodo,  orci diam commodo pede, ac congue neque libero quis justo. Donec sit  amet ligula. In vehicula, elit ut pellentesque viverra, arcu nisl  tincidunt ipsum, in viverra dui orci vel massa. Nunc tincidunt congue  risus. Donec nec sem id elit egestas porttitor. Fusce ultrices nulla. </p>
+      <h2 id="ap3">Texto de ejemplo 3</h2>
+      <p>Praesent ut ipsum. Nullam vitae nunc. Nam sit amet libero id mauris  consectetur pulvinar. Suspendisse vulputate lorem quis lectus. Quisque  commodo purus et nibh. Nunc quis mi quis risus hendrerit ultricies. Cum  sociis natoque penatibus et magnis dis parturient montes, nascetur  ridiculus mus. Aliquam ac dui. Mauris vulputate fermentum tellus. Morbi  rhoncus lorem id nibh. </p>
+      <p>Etiam cursus nulla ac purus. Pellentesque massa elit, dignissim et,  volutpat eu, sagittis tristique, sem. Quisque nec leo. Etiam fringilla  pellentesque turpis. Vestibulum at est. Sed sapien nunc, faucibus ac,  suscipit sit amet, lacinia porttitor, mauris. Curabitur congue justo  sed nunc. Pellentesque habitant morbi tristique senectus et netus et  malesuada fames ac turpis egestas. Integer tristique diam vitae ligula.  Nulla tincidunt, metus sit amet congue porttitor, purus pede commodo  odio, vel varius mauris nulla id augue. Mauris pellentesque volutpat  lacus. Maecenas erat. </p>
+      <h2 id="ap4">Texto de ejemplo 4</h2>
+      <p>Praesent ut ipsum. Nullam vitae nunc. Nam sit amet libero id mauris  consectetur pulvinar. Suspendisse vulputate lorem quis lectus. Quisque  commodo purus et nibh. Nunc quis mi quis risus hendrerit ultricies. Cum  sociis natoque penatibus et magnis dis parturient montes, nascetur  ridiculus mus. Aliquam ac dui. Mauris vulputate fermentum tellus. Morbi  rhoncus lorem id nibh. </p>
+      <p>Etiam cursus nulla ac purus. Pellentesque massa elit, dignissim et,  volutpat eu, sagittis tristique, sem. Quisque nec leo. Etiam fringilla  pellentesque turpis. Vestibulum at est. Sed sapien nunc, faucibus ac,  suscipit sit amet, lacinia porttitor, mauris. Curabitur congue justo  sed nunc. Pellentesque habitant morbi tristique senectus et netus et  malesuada fames ac turpis egestas. Integer tristique diam vitae ligula.  Nulla tincidunt, metus sit amet congue porttitor, purus pede commodo  odio, vel varius mauris nulla id augue. Mauris pellentesque volutpat  lacus. Maecenas erat. </p>
+      <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices  posuere cubilia Curae; Vestibulum volutpat, lacus non mattis vulputate,  lorem nunc varius odio, in venenatis ante augue quis nisl. Praesent ut  mi interdum lorem consequat vulputate. Vivamus ac urna non elit  pellentesque sollicitudin. Nunc pharetra nibh in quam. Proin eu magna  ut ligula volutpat mollis. Quisque mollis, nulla a porttitor commodo,  orci diam commodo pede, ac congue neque libero quis justo. Donec sit  amet ligula. In vehicula, elit ut pellentesque viverra, arcu nisl  tincidunt ipsum, in viverra dui orci vel massa. Nunc tincidunt congue  risus. Donec nec sem id elit egestas porttitor. Fusce ultrices nulla. </p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

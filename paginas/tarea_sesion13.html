@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If anidado</title>
+
+    <script>
+        var opcion = confirm("¿Eres Estudiante del CUVALLES ?")
+        var resp;
+        var contestado = false
+
+        while (contestado == false) {
+            if (opcion == true) {
+                resp = prompt("Estudias Tecnologias de la Informacion ?");
+                if (resp.toLowerCase() == "si") {
+                    alert("Felicidades, estas en la mejor carrera")
+                    contestado = true;
+                } else if (resp.toLowerCase() == "no") {
+                    alert("Uy, te recomiendo que estudies Tecnologias")
+                    contestado = true;
+                } else {
+                    alert("No hiciste caso de contestar con un SI o NO, LEA bien");
+                }
+
+            }
+            if (opcion == false) {
+                alert("Usted no es alumno del CUVALLES, buuuu!!!!!!")
+                contestado = true;
+            }
+        }
+
+        alert("Este Juego lo programo Jesus Emmanuel Santos Chavez")
+
+    </script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Este es un ejemplo de IF anidado</h1>
+
+
+</body>
+
+</html>

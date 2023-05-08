@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Bucle FOR en JavaScript</title>
+<script language="javascript">
+  <!--
+      //Declaración de variable:
+	  var mensaje = "Hola, estoy dentro de un bucle FOR";
+	 	 
+	 //Generamos un bucle FOR que se ejecutará 5 veces
+	 //var i es la variable de inicialización
+	 //i < 5 significa que hasta que llegue a 5 se detendrá el ciclo FOR
+	 //i++ significa que se incrementa en 1 el valor de la variable 1
+
+	 function ciclo(){
+	 for(var i = 0; i < 5; i++) {
+        alert(mensaje);
+		document.write("Esta es la vez : " + (i + 1) + " que se ejecuta" + "<br>");
+      }
+	}
+
+  //-->
+</script>
+</head>
+<body>
+	<a href="#" onclick="ciclo();"> Click para empezar el ciclo </a>
+</body>
+</html>

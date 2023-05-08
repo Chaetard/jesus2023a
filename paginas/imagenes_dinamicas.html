@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes Dinamicas</title>
+    <script>
+
+        function cambia_imagen1() {
+            document.getElementById("imagenX").src = "../imagenes/img1.png";
+            document.body.style.backgroundColor = 'green';
+
+        }
+
+        function cambia_imagen2(){
+            document.getElementById('imagenX').src = "../imagenes/im2.jpg";
+            document.body.style.backgroundColor = 'gray';
+        }
+        function cambia_imagen3(){
+            document.getElementById('imagenX').src = "../imagenes/img3.jpeg";
+            document.body.style.backgroundColor = 'yellow';
+        }
+        function cambia_imagen4(){
+            document.getElementById('imagenX').src = "../imagenes/logo.jpg";
+            document.body.style.backgroundColor = 'white';
+        }
+
+    </script>
+</head>
+
+<body>
+    <a href="# " onmouseover="cambia_imagen1()" onmouseout="cambia_imagen4()"> Cambiar a la Imagen 1 </a>
+<br>
+    <a href="# " onmouseover="cambia_imagen2()" onmouseout="cambia_imagen4()"> Cambiar a la Imagen 2 </a>
+<br>
+    <a href="# " onmouseover="cambia_imagen3()" onmouseout="cambia_imagen4()"> Cambiar a la Imagen 3 </a>
+<br>
+    <img src="" id="imagenX">
+</body>
+
+</html>

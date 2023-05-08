@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Funciones en JavaScript con valores de retorno</title>
+<script language="javascript">
+  <!--
+      //Declaración de variables:
+	  var numero1, resultado, precio;
+	  precio = prompt("¿Escribe el precio a calcular el iva", "");
+	 
+	 //Mandamos llamar a la función calcula_iva() a la cual se la pasa
+	 //1 ARGUMENTO que es el valor de lo escrito en el prompt
+	 //para que se ejecute y nos muestre su funcionamiento en pantalla
+	 resultado = calcula_iva(precio);
+	 
+	 //Generamos una función que hará las veces de calculadora de iva
+	 //Esta funcion recibe un PARAMETRO llamado "numero1"
+	 function calcula_iva(numero1) 
+	 {
+	     var iva = 0.16;
+		 var iva_calculado;
+		 iva_calculado = (numero1 * iva);
+		 alert("El iva a pagar es:" + iva_calculado);
+		 document.write("RESULTADO : " + iva_calculado + "<br>");
+		 
+		 return iva_calculado; 
+	 }
+	 
+	 document.write("El iva calculado fue: " + resultado);
+
+  //-->
+</script>
+</head>
+<body>
+</body>
+</html>

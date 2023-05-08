@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciclo FOR, Funciones y DOM de JavaScript</title>
+    <style>
+        .div1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        #Mortal {
+            float: left;
+            width: 30%;
+            height: 200px;
+            background-color: #aaddff;
+
+        }
+
+        #boton_exec {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #Kombat {
+            float: left;
+            width: 70%;
+            background-color: #ffaafb;
+            text-align: center;
+            font-size: 18px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="div1">
+        <div id="Mortal" class="">
+
+        </div>
+        <div id="Kombat">
+            <form action="">
+                <label for="nombre">Escribe un numero del 1 al 20</label>
+                <input type="text" id="texto_caja1" name="texto_caja1">
+                <br>
+                <br>
+                <input type="button" value="EJECUTAR ESTE FORMULARIO" id="boton_exec" onclick="valida_numeros()">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var numerodesconocido = 0;
+        function valida_numeros() {
+            numerodesconocido = document.getElementById("texto_caja1").value;
+
+            if (isNaN(numerodesconocido)) {
+                alert("Favor de escribir un numero entero entre 1  y 20")
+            }
+            else if (numerodesconocido == 0 || numerodesconocido >= 21) {
+                alert("Favor de escribir un numero entero entre 1  y 20")
+            }
+            else if (numerodesconocido >= 1 && numerodesconocido <= 20) {
+                for (var i = 0; i < numerodesconocido; i++)
+                    document.write("Esta es la ves numero: " + (i + 1) + " que se ejecuta el FOR" + "<br>");
+            }
+        }
+    </script>
+</body>
+
+</html>

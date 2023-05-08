@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DOM en JavaScript</title>
+<style type="text/css" media="screen">
+
+#menu{
+	width:18%;
+	float:left;
+	background-color:#F90;
+	height:970px;
+	}
+	
+#formulario {
+	width:58%;
+	float:left;
+	background-color:#CCC; 
+	margin:5px;
+	}
+	
+#lateral{
+	width:18%;
+	float:left;
+	background-color:#F90;
+	height:970px;
+	}
+	
+#contenedor {
+	margin:auto;
+	}
+</style>
+<script language="javascript">
+  <!--
+      function TipoMoto()
+	  {
+      var motose = document.getElementById("tipos_motos").value;
+		 alert("Has seleccionado un tipo de moto: " + motose);  
+	  }
+	  
+	  //Se establece o declara la función MarcaMoto()
+	  function MarcaMoto()
+	  {
+		 // en una variable guardamos todos lo radiobutton llamados "marcas" 
+		 var radios = document.getElementsByName("marcas");
+		 //Verificamos cuantas marcas hay en los radiobutton para saber cuantas veces
+		 //repetir el bucle FOR
+		 var length = radios.length;
+         
+		 //Con un ciclo FOR recorremos uno por uno todos los radiobuttons llamados "marcas"
+         for (var i = 0; i < length; i++) 
+		 {
+			  //Si uno de esos radiobuttons están seleccionados
+              if (radios[i].checked) 
+			  {
+                // Mandamos un ALERT dicienco cuál radiobutton se seleccionó
+                alert("Has seleccionado la marca: " + radios[i].value);
+               break;
+              }
+         }
+	  }
+	 
+	  //Declaramos a establecemos la función
+	  function ElegisteDia()
+	  {
+		 //En una variable guardamos el valor del elemento elegido del ComboBox (Caja de Selección) 
+		 var dia = document.getElementById("dia_del_mes").value;
+		 //En una ALERT mostramos en pantalla el valor del elemento elegido
+		 alert("Has seleccionado el DIA: " + dia);  
+	  }
+	  
+	  function ElegisteMes()
+	  {
+		 var mes = document.getElementById("mes_elegido").value;
+		 alert("Has seleccionado el MES: " + mes);  
+	  }
+	  
+	  function ElegisteAnio()
+	  {
+		 var anio = document.getElementById("anio").value;
+		 alert("Has seleccionado el AÑO: " + anio);  
+	  }
+	  
+	  //Declaramos la función para verificar si algún checkbox fue seleccionado
+	  function valida_checkbox(){
+		 //En una variable guardamos el checkbox del formulario 
+         var checkBox = document.getElementById("accesorio");
+		 //Se está seleccionado (con el check) entonces:
+         if (checkBox.checked)
+		 {
+			 //Enviamos un ALERT en pantalla para decir que se selecciono por lo menos un checkbox
+             alert("Esta seleccionado un accesorio") ;
+         } else {
+			 //De lo contrario decimos que aún no se ha seleccionado ningún checkbox
+             alert("Aún no has seleccionado ningún accesorio")
+         }
+      }
+  //-->
+</script>
+</head>
+
+<div id="contenedor">
+<h2>Formulario para ventas</h2>
+
+<div id="menu">Aqui va el menu de navegación</div>
+<div id="formulario" align="left">
+<form method="post" action="" id="formulario_ventas">
+<fieldset>
+<legend>Comprador de Motos :</legend>
+  <br>
+  Nombre del Comprador:<input type="text" name="firstname" id="firstname" size="60">
+  <br>
+  <br>
+
+  Tipo de Motos:<!-- Caja de Selección o ComboBox -->
+<select name="Tipos Motos" id="tipos_motos" onChange="TipoMoto()">
+  <option value="0">--Selecciona un Tipo--</option>
+  <option value="Moto de pista">Moto de Pista</option>
+  <option value="Moto de Ruta">Moto de Ruta</option>
+  <option value="Cuatrimoto">Cuatrimoto</option>
+  <option value="Moto de Carreras">Moto de Carreras</option>
+</select>
+ 
+ <br>
+ <br>
+ Marcas de Moto: <br /><br />
+ <input type="radio" name="marcas" value="Honda" id="marca_moto" onClick="MarcaMoto()">Honda
+ <br>
+ <input type="radio" name="marcas" value="Yamaha" id="marca_moto" onClick="MarcaMoto()">Yamaha
+ <br>
+ <input type="radio" name="marcas" value="Can Am" id="marca_moto" onClick="MarcaMoto()">Can Am
+ <br>
+ <input type="radio" name="marcas" value="Italika" id="marca_moto" onClick="MarcaMoto()">Italika
+ <br>
+ <input type="radio" name="marcas" value="BMW" id="marca_moto" onClick="MarcaMoto()">BMW
+ <br>
+ <input type="radio" name="marcas" value="Harley Davison" id="marca_moto">Harley Davison
+ <br>
+ <br>
+ 
+Dia: <!-- Caja de Selección o ComboBox -->
+  <select name="dia" id="dia_del_mes" onChange="ElegisteDia()">
+  <option value="00">-- Selecciona el Dia --</option>
+  <option value="01">01</option>
+  <option value="02">02</option>
+  <option value="03">03</option>
+  <option value="04">04</option>
+  <option value="05">05</option>
+  <option value="06">06</option>
+  <option value="07">07</option>
+  <option value="08">08</option>
+  <option value="09">09</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+  <option value="12">12</option>
+  <option value="13">13</option>
+  <option value="14">14</option>
+  <option value="15">15</option>
+  <option value="16">16</option>
+  <option value="17">17</option>
+  <option value="18">18</option>
+  <option value="19">19</option>
+  <option value="20">20</option>
+  <option value="21">21</option>
+  <option value="22">22</option>
+  <option value="23">23</option>
+  <option value="24">24</option>
+  <option value="25">25</option>
+  <option value="26">26</option>
+  <option value="27">27</option>
+  <option value="28">28</option>
+  <option value="29">29</option>
+  <option value="30">30</option>
+  <option value="31">31</option>
+</select>
+ <br>
+ <br>
+ 
+  Mes:<!-- Caja de Selección o ComboBox -->
+  <select name="mes" id="mes_elegido" onChange="ElegisteMes()">
+  <option value="0">-- Selecciona el Mes --</option>
+  <option value="enero">Enero</option>
+  <option value="febrero">Febrero</option>
+  <option value="marzo">Marzo</option>
+  <option value="abril">Abril</option>
+  <option value="mayo">Mayo</option>
+  <option value="junio">Junio</option>
+  <option value="julio">Julio</option>
+  <option value="agosto">Agosto</option>
+  <option value="septiembre">Septiembre</option>
+  <option value="octubre">Octubre</option>
+  <option value="noviembre">Noviembre</option>
+  <option value="diciembre">Diciembre</option>
+</select>
+<br>
+<br>
+ Año:<!-- Caja de Selección o ComboBox -->
+  <select name="año" id="anio" onChange="ElegisteAnio()">
+  <option value="0">-- Selecciona el Año --</option>
+  <option value="2015">2015</option>
+  <option value="2016">2016</option>
+  <option value="2017">2017</option>
+  <option value="2018">2018</option>
+  <option value="2019">2019</option>
+  <option value="2020">2020</option>
+</select>
+<br>
+<br>
+Elige uno o más accesorios: <br /><br />
+<input type="checkbox" name="accesorios" value="Casco" id="accesorio" onClick="valida_checkbox()">Casco
+<br>
+<input type="checkbox" name="accesorios" value="Guantes" id="accesorio" onClick="valida_checkbox()">Guantes
+<br>
+<input type="checkbox" name="accesorios" value="Winch" id="accesorio" onClick="valida_checkbox()">Winch
+<br>
+<input type="checkbox" name="accesorios" value="Barra de Leds" id="accesorio" onClick="valida_checkbox()">Barra de Leds
+<br>
+<input type="checkbox" name="accesorios" value="Chamarra" id="accesorio">Chamarra
+<br>
+<input type="checkbox" name="accesorios" value="Googles" id="accesorio">Googles 
+<br>
+<input type="checkbox" name="accesorios" value="Botas" id="accesorio">Botas 
+<br>
+<input type="checkbox" name="accesorios" value="Rines Deportivos" id="accesorio">Rines Deportivos 
+<br>
+<input type="checkbox" name="accesorios" value="Pechera" id="accesorio">Pechera
+<br>
+<input type="checkbox" name="accesorios" value="Armadura" id="accesorio">Armadura
+<br>
+<input type="hidden" value="AnaVasquez" name="No_Me_Veo">
+<br>
+
+Deja tu Comentario:
+<br />
+<br />
+<textarea id="comentario" cols="30" rows="10">
+</textarea>
+<br>
+<br>
+<input type="submit" value="Grabar Datos" id="btn_grabar">
+<input type="reset" value="Borrar estos Datos" id="btn_borrar">
+<br>
+
+</fieldset>
+</form>
+</div>
+<div id="lateral">Aqui va el lateral</div>
+</div>
+</body>
+</html>
